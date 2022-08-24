@@ -1,0 +1,111 @@
+/* --- === 8. Client Section === ---  */
+
+#client{
+  background: $bg-color;
+  padding:50px 0 90px 0;
+  .section-title{
+    @include section_title;
+    padding-top: 60px;
+    text-align: left;
+  }
+  .client-btn-box{
+    width: 100%;
+    z-index: 1;
+    .client-btn-area{
+      background: $bg-gradient;
+      box-shadow: $box-shadow-gradient;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      flex-wrap: nowrap;
+      margin-top: 0;
+      float: left;
+      li{
+        font-size: 18px;
+        a{
+          border: none;
+          font-size: 18px;
+          color: $text-black;
+          height: 90px;
+          border-radius: 10px;
+          padding: 15px 20px;
+          width: 100%;
+          display: flex;
+          margin: 0;
+          align-items: center;
+          transition: 0.3s;
+          justify-content: center;
+          cursor: pointer;
+          &:hover{
+            background: $bg-gradient;
+            box-shadow: $box-shadow-gradient;
+          }
+        }
+        .active{
+          background: $bg-gradient;
+          box-shadow: $box-shadow-gradient;
+          color: $common-color;
+        }
+      }
+    }
+  }
+  /*-- client-brand start --*/
+  .client-tab-area{
+    .client-card{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+      margin-top: -30px;
+      .card-single-content{
+        margin-top: 30px;
+        flex-basis: 33.33%;
+        padding: 0 15px;
+        .card-info{
+          background: $bg-gradient;
+          box-shadow: $box-shadow-gradient;
+          border-radius: 10px;
+          position: relative;
+          z-index: 2;
+          .thumnail{
+            height: 150px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            a{
+              display: block;
+              img{
+                max-height: 90px;
+              }
+            }
+          }
+          .client-seperator{ 
+            position: relative;
+            z-index: 2;
+            &::after{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              left: 50%;
+              transform: translateX(-50%);
+              background: #dce1e4;
+              opacity: 0.9;
+              z-index: -1;
+            }
+          }
+          .client-name{
+            padding: 16px;
+            
+            span{
+              font-size: 16px;
+              a{
+                color: $text-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

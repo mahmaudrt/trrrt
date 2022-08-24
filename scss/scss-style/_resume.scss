@@ -1,0 +1,252 @@
+/* --- === 6. Resume Section === ---  */
+
+#resume{
+  background: $bg-color;
+  padding: 0 0 80px 0;
+  .section-title{
+    @include section_title;
+    padding-top: 60px;
+  }
+  /* -- Resume Btn List Start -- */
+  .resume-btn-area{
+    background: $bg-gradient;
+    box-shadow: $box-shadow-gradient;
+    border: 0;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 30px;
+    .nav-item {
+      flex-basis: 25%;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      .nav-link{
+        color: $text-black;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 30px 10px;
+        outline: none;
+        border-radius: 10px;
+        transition: 0.5s;
+        display: block;
+        border: 0;
+        
+        &:hover {
+          background: $bg-gradient;
+          box-shadow: $box-shadow-gradient;
+          color: $common-color;
+        }
+      }
+      .active{
+        background: $bg-gradient;
+        box-shadow: $box-shadow-gradient;
+        color: $common-color;
+        border: 0;
+        outline: none;
+      }
+    }
+  }
+   /* -- Resume Btn List End -- */
+
+   /* -- Edu & Ex tab Start -- */
+  .edu-ex-mainbox{
+    margin-top: 40px;
+    .edu-ex-content{
+
+      .edu-sub-title{
+        color: $common-color;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+      .edu-title{
+        color: $text-black;
+        font-size: 36px;
+        line-height: 62px;
+        font-weight: 700;
+      }
+      .edu-ex-box{
+        padding-left: 31px;
+        border-left: 5px solid #d9dee2;
+        .eduex-single-box{
+          background: $bg-color;
+          box-shadow: $box-shadow-gradient;
+          margin-top: 50px;
+          padding: 45px 40px;
+          border-radius: 6px;
+          transition: .3s;
+          position: relative;
+          z-index: 2;
+          &:before {
+            content: "";
+            position: absolute;
+            transition: .5s ease-in-out;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            top: 0;
+            left: 0;
+            background: linear-gradient(145deg, #ff014f, #d11414);
+            opacity: 0;
+            z-index: -1;
+          }
+          .single-content{
+            &:before{
+              position: absolute;
+              content: "";
+              background: #d9dee2;
+              width: 28px;
+              height: 5px;
+              right: 100%;
+              top: 63px;
+              transform: translateY(-7px);
+              
+            }
+            .single-content-heading{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border-bottom: 1px solid #e3e9ed;
+              padding-bottom: 20px;
+              margin-bottom: 20px;
+              .single-content-title{
+                margin-bottom: 15px;
+                h4{
+                  color: $text-black;
+                  font-size: 22px;
+                  line-height: 39px;
+                  font-weight: 500;
+                  margin-bottom: 7px;
+                  transition: 0.3s;
+                }
+                span{
+                  color: #3c3e41;
+                  font-size: 14px;
+                  display: block;
+                }
+              }
+              .single-content-date{
+                display: inline-block;
+                span{
+                  color: $common-color;
+                  font-size: 14px;
+                  line-height: 36px;
+                  font-weight: 500;
+                  display: block;
+                  padding: 0 15px;
+                  background: $bg-secondary;
+                  box-shadow: $box-shadow-gradient;
+                  border-radius: 6px;
+                  transition: 0.3s;
+                }
+              }
+            }
+            .single-content-desc{
+              color: $text-secondary;
+              font-size: 18px;
+              line-height: 28px;
+            }
+            &:after{
+              position: absolute;
+              content: "";
+              width: 20px;
+              height: 20px;
+              border: 5px solid #d9dee2;
+              background: #ecf0f3;
+              border-radius: 100%;
+              right: 104%;
+              top: 55px;
+              transition: 0.5s;
+              transform: translateY(-7px);
+            }
+          }
+          
+          &:hover .single-content:after{
+            background: linear-gradient(145deg, #ff014f, #d11414);
+          }
+          &:hover .single-content .single-content-heading .single-content-title h4,
+          &:hover .single-content .single-content-heading .single-content-title span,
+          &:hover .single-content .single-content-desc{
+            color: $text-white;
+          }
+          &:hover .single-content .single-content-heading .single-content-date span{
+            box-shadow: none;
+            background: $common-color;
+            color: $text-white;
+          }
+          &:hover .single-content .single-content-heading {
+            border-bottom: 1px solid rgb(206, 110, 110);
+          }
+        }
+        
+        .eduex-single-box:hover:before{
+          opacity: 1;
+          
+        }
+      }
+    }
+  }
+  /* -- Edu & Ex tab End -- */
+
+  /* -- Skill tab Start -- */
+  .skill-mainbox{
+    margin-top: 40px;
+    .skill-content{
+      .skill-sub-title{
+        color: $common-color;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+      .skill-title{
+        color: $text-black;
+        font-size: 36px;
+        line-height: 62px;
+        font-weight: 700;
+      }
+      .skill-box{
+        .progress-charts{
+          margin-top: 30px;
+          overflow: hidden;
+          .progress-heading{
+            margin-bottom: 15px;
+            color: $text-black;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.9;
+            font-weight: 500;
+          }
+          .progress{
+            background: #dce1e4;
+            box-shadow: none;
+            height: 13px;
+            overflow: visible;
+            font-size: 14px;
+            border-radius: 10px;
+            padding: 3px;
+            .progress-bar{
+              background: linear-gradient(145deg, #fff 0%, (#ff014f) 100%);
+              overflow: visible;
+              position: relative;
+              border-radius: 14px;
+              .percent-label{
+                position: absolute;
+                right: -7px;
+                top: -22px;
+                font-weight: 400;
+                color: #c3cedd;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                opacity: 0.9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* -- Skill tab End -- */
+}

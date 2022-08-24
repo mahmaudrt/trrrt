@@ -1,0 +1,91 @@
+/* --- === 4. Feature Section === ---  */
+
+#feature{
+  background: $bg-color;
+  padding: 0 0 80px 0;
+  .section-title{
+    @include section_title;
+    padding-top: 60px;
+    text-align: left;
+  }
+
+  .feature-box{
+    padding: 35px 50px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    transition: .3s;
+    cursor: pointer;
+    &::before{
+      content: "";
+    position: absolute;
+    transition: var(--transition);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    background: $bg-gradient;
+    box-shadow: $box-shadow-gradient;
+    z-index: -1;
+    transition: .3s ease-in-out;
+    }
+    .feature-single-box{
+      transition: .3s ease-in-out;
+      .feature-icon{
+        margin-bottom: 30px;
+        font-size: 40px;
+        svg{
+          color: $common-color;
+        }
+      }
+      .feature-content{
+        .feature-content-title{
+          margin-bottom: 20px;
+          a{
+            color: $text-black;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 500;
+            
+          }
+        }
+        .feature-content-desc{
+          color: $text-secondary;
+          font-size: 16px;
+          line-height: 28px;
+          margin-bottom: 22px;
+        }
+        .feature-content-btn{
+          visibility: hidden;
+          opacity: 0;
+          color: $common-color;
+          transition: .1s ease-in-out;
+          svg{
+            font-size: 32px;
+            transition: .1s ease-in-out;
+          }
+        }
+      }
+    }
+    &:hover:before{
+      background: $common-color;
+    }
+    &:hover .feature-single-box{
+      transform: translateY(-10px);
+    }
+    &:hover .feature-icon svg{
+      color: $text-white;
+    }
+    &:hover .feature-content .feature-content-title a,
+    &:hover .feature-content .feature-content-desc{
+      color: $text-white;
+    }
+    &:hover .feature-content .feature-content-btn{
+      color: $text-white;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

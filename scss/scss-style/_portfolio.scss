@@ -1,0 +1,92 @@
+/* --- === 5. Portfolio Section === ---  */
+
+#portfolio{
+  background: $bg-color;
+  padding: 30px 0 80px 0;
+  .section-title{
+    @include section_title;
+    padding-top: 80px;
+  }
+
+  .portfolio-box{
+    background: $bg-gradient;
+    box-shadow: $box-shadow-gradient;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    .portfolio-single-box{
+      text-align: left;
+      .portfolio-thumbnail{
+        a{
+          display: block;
+          overflow: hidden;
+          border-radius: 10px;
+          img{
+            height: auto;
+            object-fit: cover;
+            transition: .4s ease-in-out;
+          }
+        }
+      }
+      .portfolio-content{
+        padding-top: 20px;
+        .ctg-info{
+          padding-bottom: 10px;
+          .ctg-info-subtitle{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            a{
+              color: $common-color;
+              font-size: 12px;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              display: block;
+            }
+          }
+          .ctg-info-meta{
+            span{
+              color: $text-secondary;
+              font-size: 13px;
+              font-weight: 500;
+              a{
+                color: $text-secondary;
+                svg{
+                  margin-right: 3px;
+                }
+              }
+            }
+          }
+        }
+        .ctg-info-title{
+          a{
+            color: $text-black;
+            font-size: 23px;
+            line-height: 34px;
+            font-weight: 600;
+            display: inline-block;
+            svg{
+              color: $common-color;
+              font-size: 20px;
+              opacity: 0;
+              transform: rotate(-20deg);
+              transition: .3s;
+              position: relative;
+              top: 8px;
+            }
+          }
+          &:hover a{
+            color: $common-color;
+          }
+          &:hover a svg{
+            opacity: 1;
+            top: 0;
+          }
+        }
+      }
+    }
+    &:hover .portfolio-thumbnail a img{
+      transform: scale(1.1);
+    }
+  }
+}

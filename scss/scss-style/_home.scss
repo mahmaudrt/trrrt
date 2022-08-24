@@ -1,0 +1,172 @@
+/* --- === 3. Home Section === ---  */
+
+#home{
+  background: $bg-color;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  position: relative;
+
+  .home-section-content{
+    .home-sub-title{
+      color: $text-black;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .home-title{
+      color: $text-black;
+      font-size: 46px;
+      line-height: 50px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      .full-name{
+        color: $common-color;
+      }
+      .home-header-caption{
+        .home-header-cool{
+          color: $common-color;
+        }
+        .home-header-changing{}
+        .ah-words-wrapper:after{
+          background-color: $common-color;
+          height: 70%;
+          top: 12px;
+        }
+      }
+    }
+    .home-description{
+      p{
+        color: $text-black;
+        opacity: 0.9;
+        font-size: 16px;
+        line-height: 30px;
+        width: 85%;
+      }
+    }
+    .home-social-share{
+      margin-top: 100px;
+      .social-share-left{
+        .home-social-title{
+          color: $text-black;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          display: inline-block;
+          margin-bottom: 20px;
+        }
+        ul{
+          li{
+            margin: 10px 12px;
+            a{
+              display: inline-block;
+              width: 60px;
+              height: 60px;
+              line-height: 60px;
+              text-align: center;
+              letter-spacing: 2px;
+              background: $bg-gradient;
+              box-shadow: $box-shadow-gradient;
+              color: $text-black;
+              transition: .3s ease-in-out;
+              text-transform: uppercase;
+              border-radius: 6px;
+              position: relative;
+              &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+                top: 0;
+                left: 0;
+                background: linear-gradient(to right bottom, #212428, #16181c);
+                opacity: 0;
+                z-index: -1;
+              }
+              svg{
+                font-size: 14px;
+              }
+              &:hover{
+                background: $common-color;
+                color: $text-white;
+                transform: translateY(-3px);
+              }
+            }
+          }
+        }
+      }
+      .home-skill-share{
+        .home-skill-title{
+          color: $text-black;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          display: inline-block;
+          margin-bottom: 20px;
+        }
+        .home-skill-img{
+          li{
+            margin: 10px 12px;
+            display: inline-block;
+              width: 60px;
+              height: 60px;
+              line-height: 60px;
+              text-align: center;
+              letter-spacing: 2px;
+              background: $bg-gradient;
+              box-shadow: $box-shadow-gradient;
+              color: $text-black;
+              transition: .3s ease-in-out;
+              text-transform: uppercase;
+              border-radius: 6px;
+              position: relative;
+              &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+                top: 0;
+                left: 0;
+                background: linear-gradient(to right bottom, #212428, #16181c);
+                opacity: 0;
+                z-index: -1;
+              }
+            img{
+              width: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home-section-img{
+    position: relative;
+    z-index: 2;
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: calc(100% - 130px);
+      left: 50%;
+      bottom: 0;
+      background: $bg-gradient;
+      box-shadow: $box-shadow-gradient;
+      transform: translateX(-50%);
+      border-radius: 6px;
+    }
+    .home-bg{
+      img{
+        border: 0;
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

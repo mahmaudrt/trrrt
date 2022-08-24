@@ -1,0 +1,213 @@
+/* --- === 9. Pricing Section === ---  */
+#pricing{
+  background: $bg-color;
+  padding: 90px 0;
+  
+  .section-title{
+    @include section_title;
+    text-align: left;
+  }
+  .pricing-box{
+    background: $bg-gradient;
+    box-shadow: $box-shadow-gradient;
+    border-radius: 6px;
+    margin-left: 10px;
+    ul{
+      background: $bg-gradient;
+      box-shadow: $box-shadow-gradient;
+      border-radius: 10px;
+      align-items: center;
+      li{
+        flex-basis: 33.33%;
+        margin: 0;
+        transition: 0.3s;
+        a{
+          color: $text-black;
+          font-size: 16px;
+          text-transform: capitalize;
+          text-align: center;
+          display: block;
+          padding: 30px 10px;
+          border-radius: 6px;
+          transition: 0.4s;
+          font-weight: 500;
+          border: 0;
+          cursor: pointer;
+          &:hover{
+            background: $bg-gradient;
+            box-shadow: $box-shadow-gradient;
+          }
+        }
+        .active{
+          background: $bg-gradient;
+          box-shadow: $box-shadow-gradient;
+          color: $common-color;
+        }
+      }
+      .recommended{
+        position: relative;
+        &::before{
+          content: "Recommended";
+          position: absolute;
+          top: -50px;
+          right: 33px;
+          background: #545961;
+          padding: 5px 13px;
+          font-size: 12px;
+          border-radius: 30px;
+          background: #e3e9ec;
+          color: $text-black;
+          z-index: 2;
+        }
+        &::after{
+          content: "";
+          right: 60px;
+          top: -23px;
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 15px solid #e3e9ec;
+        }
+      }
+    }
+    .tab-content{
+      padding: 0 50px 40px 40px;
+      .pricing-single-box{
+        .pricing-header{
+          margin-top: 50px;
+          margin-bottom: 40px;
+          .pricing-left{
+            .pricing-title{
+              color: $text-black;
+              font-size: 27px;
+              margin-bottom: 9px;
+            }
+            span{
+              color: $text-secondary;
+              font-size: 18px;
+              line-height: 27px;
+            }
+          }
+          .pricing-right{
+            span{
+              color: $common-color;
+              font-size: 30px;
+              font-weight: 600;
+              padding: 9px 25px;
+              background: $bg-gradient;
+              box-shadow: $box-shadow-gradient;
+              border-radius: 6px;
+              display: inline-block;
+            }
+          }
+        }
+        .pricing-body{
+          .pricing-desc{
+            color: $text-secondary;
+            font-size: 18px;
+            line-height: 30px;
+            max-width: 84%;
+            font-weight: 400;
+            margin-bottom: 40px;
+          }
+          .pricing-list{
+            display: flex;
+            justify-content: space-between;
+            .list-left{
+              margin-bottom: 30px;
+              .left-check{
+                margin-bottom: 15px;
+                svg{
+                  color: $common-color;
+                  font-size: 18px;
+                  margin-top: 2px;
+                }
+                p{
+                  color: $text-secondary;
+                  font-size: 18px;
+                  margin-left: 10px;
+                }
+              }
+            }
+            .list-right{
+              .right-check{
+                margin-bottom: 15px;
+                svg{
+                  color: $common-color;
+                  font-size: 18px;
+                  margin-top: 2px;
+                }
+                p{
+                  color: $text-secondary;
+                  font-size: 18px;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+        .pricing-footer{
+          text-align: center;
+          margin-top: 50px;
+          a{
+            background: $bg-gradient;
+            box-shadow: $box-shadow-gradient;
+            border-radius: 6px;
+            color: $common-color;
+            text-transform: uppercase;
+            padding: 20px 0;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+            font-size: 14px;
+            font-weight: 500;
+            border: 0 none;
+            transition: .3s;
+            &::before{
+              content: "";
+              position: absolute;
+              transition: var(--transition);
+              width: 100%;
+              height: 100%;
+              border-radius: 6px;
+              top: 0;
+              left: 0;
+              background: linear-gradient(to right bottom, #212428, #16181c);
+              opacity: 0;
+              z-index: -1;
+            }
+            span{
+              margin-right: 5px;
+              font-size: 16px;
+            }
+            &:hover{
+              background: $common-color;
+              color: $text-white;
+            }
+          }
+          .pricing-time-line{
+            .time-single{
+              margin-right: 15px;
+              svg{
+                font-size: 14px;
+                color: $text-secondary;
+                margin-top: 9px;
+                margin-right: 7px;
+              }
+              span{
+                color: $text-secondary;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-top: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

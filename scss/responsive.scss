@@ -1,0 +1,389 @@
+
+
+
+/* --- === Responsive === ---  */
+
+/* --- X-Large devices (large desktops, less than 1399px) ---  */
+@media only screen and (min-width: 1200px) and  (max-width: 1599px) {
+  #header .navbar .navbar-nav li {
+    margin: 5px 16px;
+  }
+  #header .navbar .buy-now {
+    margin-left: 15px;
+  }
+}
+
+/* --- X-Large devices (large desktops, less than 1199px) ---  */
+@media only screen and (min-width: 992px) and  (max-width: 1199px) {
+
+  #feature .feature-box .feature-single-box .feature-content .feature-content-title a {
+    font-size: 22px;
+  }
+
+  #portfolio .portfolio-box .portfolio-single-box .portfolio-content .ctg-info-title a {
+    font-size: 18px;
+  }
+
+  
+#resume .edu-ex-mainbox .edu-ex-content .edu-ex-box .eduex-single-box .single-content::after {
+  right: 105%;
+}
+
+  .col-12{
+    margin: 0;
+  }
+  #testimonial .testi-card .card-box .row{
+    margin: 0 15px;
+  }
+  #testimonial .testi-card .card-box .card-info{
+    margin-right: 32px;
+  }
+
+  #blog .blog-box .blog-single-box .blog-content .ctg-info-title a {
+    font-size: 18px;
+  }
+}
+
+/* --- X-Large devices (large desktops, less than 991px) ---  */
+@media only screen and (min-width: 768px) and  (max-width: 991px) {
+  #home .home-section-content {
+    margin-top: 50px;
+  }
+  #home .home-section-content .home-social-share {
+    margin-top: 50px;
+  }
+
+  #feature .section-title h2,
+  #portfolio .section-title h2,
+  #resume .section-title h2,
+  #testimonial .section-title h2,
+  #client .section-title h2,
+  #pricing .section-title h2,
+  #blog .section-title h2,
+  #contact .section-title h2{
+    font-size: 40px;
+  }
+  #feature .feature-box .feature-single-box .feature-content .feature-content-title a {
+    font-size: 20px;
+  }
+
+  #portfolio .portfolio-box .portfolio-single-box .portfolio-content .ctg-info-title a {
+    font-size: 20px;
+  }
+
+  #resume .resume-btn-area .nav-item .nav-link {
+    font-size: 16px;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content{
+    margin-bottom: 40px;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-title {
+    font-size: 30px;
+  }  
+
+
+  #testimonial .testi-card .card-box .row{
+    margin: 0 15px;
+  }
+  .col-12{
+    margin: 0 10px;
+  }
+  #testimonial .testi-card .card-box .card-info{
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+    padding: 30px;
+    box-shadow: none;
+    margin-right: 0;
+    box-shadow: none;
+  }
+  #testimonial .testi-card .card-box .card-info .card-thumbnail{
+    max-width: 150px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+  #testimonial .testi-card .card-box .card-desc::before,
+  #testimonial .testi-card .card-box .card-desc::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: transparent;
+    left: 0;
+    top: 0;
+  }
+  #testimonial .testi-card .card-box .card-desc{
+    max-width: 100%;
+    min-width: 100%;
+    padding: 35px 30px;
+    margin-top: 30px;
+    box-shadow: 0 0;
+  }
+
+  #client .client-tab-area .client-card{
+    margin-top: 0;
+  }
+
+  #pricing .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #pricing .pricing-box{
+    margin-top: 30px;
+  }
+
+  #pricing .pricing-box .tab-content .pricing-single-box .pricing-footer {
+    margin-top: 20px;
+  }
+
+  #blog .blog-box .blog-single-box .blog-content .ctg-info-title a {
+    font-size: 20px;
+  }
+
+  #contact .contact-input {
+    margin-top: 40px;
+  }
+  #contact .contact-input .contact-form {
+    margin-left: 0;
+  }
+  #contact .contact-box .contact-title .title {
+    font-size: 24px;
+  }
+  #footer {
+    background: #ECF0F3;
+    padding: 60px 0;
+  }
+}
+
+/* --- X-Large devices (large desktops, less than 767px) ---  */
+@media (max-width: 767px) {
+  #home .home-section-content {
+    margin-top: 50px;
+  }
+  #home .home-section-content .home-social-share .social-share-left ul li:first-child{
+    margin-left: 0;
+  }
+  #home .home-section-content .home-social-share .home-skill-share .home-skill-img li:last-child{
+    margin-right: 0;
+  }
+  #feature .section-title h2,
+  #portfolio .section-title h2,
+  #resume .section-title h2,
+  #testimonial .section-title h2,
+  #client .section-title h2,
+  #pricing .section-title h2,
+  #blog .section-title h2,
+  #contact .section-title h2 {
+    font-size: 40px;
+  }
+  #resume .resume-btn-area .nav-item{
+    flex-basis: 100%;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-title {
+    font-size: 30px;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content{
+    margin-bottom: 40px;
+  }
+  #testimonial .testi-card {
+    padding: 0 15px;
+  }
+  #testimonial .testi-card .card-box .row{
+    margin: 0 10px;
+  }
+  .col-12{
+    margin: 0 5px;
+  }
+  #testimonial .testi-card .card-box .card-info{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+    padding: 20px;
+    box-shadow: none;
+    margin-right: 0;
+    box-shadow: none;
+  }
+  #testimonial .testi-card .card-box .card-info .card-thumbnail{
+    max-width: 150px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+  #testimonial .testi-card .card-box .card-desc::before,
+  #testimonial .testi-card .card-box .card-desc::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: transparent;
+    left: 0;
+    top: 0;
+  }
+  #testimonial .testi-card .card-box .card-desc{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 35px 30px;
+    margin-top: 25px;
+    box-shadow: 0 0;
+  }
+  #testimonial .testi-card .card-box .card-desc .card-title-area .card-title-info .title {
+    font-size: 18px;
+  }
+  #testimonial .testi-card .card-box .card-desc .card-title-area .card-title-info .date {
+    font-size: 12px;
+  }
+  #client .client-tab-area{
+    margin-top: 30px;
+  }
+  #client .client-tab-area .client-card .card-single-content {
+    flex-basis: 49.33%;
+  }
+  #pricing .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #pricing .pricing-box{
+    margin-top: 30px;
+  }
+
+  #contact .contact-input {
+    margin-top: 40px;
+  }
+  #contact .contact-input .contact-form {
+    margin-left: 0;
+  }
+}
+
+/* --- X-Large devices (large desktops, less than 575px) ---  */
+@media (max-width: 575px) {
+
+  #home .home-section-content .home-social-share {
+    margin-top: 50px;
+  }
+  #home .home-section-content .home-social-share .home-skill-share {
+    margin-top: 30px;
+  }
+
+  #portfolio .section-title {
+    padding-top: 40px;
+  }
+
+  #resume .edu-ex-mainbox .edu-ex-content .edu-ex-box .eduex-single-box .single-content::after {
+    right: 105%;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-ex-box .eduex-single-box .single-content .single-content-heading {
+    display: block;
+  }
+
+  .col-12 {
+    margin: 0 0;
+  }
+
+  #testimonial .testi-card {
+    padding: 0 0px;
+  }
+  #testimonial .testi-card .card-box .row {
+    margin: 0 0;
+  }
+  #testimonial .testi-card .card-box .card-info{
+    display: block;
+  }
+  #testimonial .testi-card .card-box .card-info .card-thumbnail{
+    max-width: 100%;
+  }
+  #testimonial .testi-card .card-box .card-info .thumbnail-content {
+    margin-top: 30px;
+  }
+  
+}
+
+/* --- X-Large devices (large desktops, less than 480px) ---  */
+@media (max-width: 480px) {}
+
+/* --- X-Large devices (large desktops, less than 375px) ---  */
+@media (max-width: 375px) {
+  
+  #home .home-section-content .home-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  #home .home-section-content .home-description p {
+    width: 100%;
+  }
+  #feature .section-title {
+    text-align: center;
+  }
+  #feature .section-title h2, #portfolio .section-title h2, #resume .section-title h2, #testimonial .section-title h2, #client .section-title h2, #pricing .section-title h2, #blog .section-title h2, #contact .section-title h2 {
+    font-size: 26px;
+  }
+  #portfolio .portfolio-box .portfolio-single-box .portfolio-content .ctg-info-title a {
+    font-size: 18px;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-ex-box {
+    padding-left: 25px;
+    margin-left: -10px;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-ex-box .eduex-single-box .single-content::after {
+    right: 106%;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-ex-box .eduex-single-box{
+    padding: 25px 20px;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-ex-box .eduex-single-box .single-content .single-content-heading .single-content-title h4{
+    font-size: 18px;
+  }
+  #resume .edu-ex-mainbox .edu-ex-content .edu-ex-box .eduex-single-box .single-content .single-content-desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #testimonial .testi-card .card-box .card-desc .card-title-area {
+    display: block;
+  }
+  #testimonial .testi-card .card-box .card-desc .card-title-area .card-rating{
+    margin-top: 30px;
+  }
+  #client .client-tab-area .client-card .card-single-content {
+    flex-basis: 100%;
+  }
+  
+  #pricing .pricing-box .tab-content .pricing-single-box .pricing-header {
+    display:  block !important;
+  }
+
+  #pricing .pricing-box .tab-content .pricing-single-box .pricing-header .pricing-left .pricing-title {
+    font-size: 20px;
+  }
+
+  #pricing .pricing-box .tab-content .pricing-single-box .pricing-header .pricing-right {
+    margin-top: 25px;
+  }
+  #pricing .pricing-box .tab-content .pricing-single-box .pricing-header .pricing-right span {
+    font-size: 20px;
+  }
+
+  #pricing .pricing-box .tab-content .pricing-single-box .pricing-body .pricing-desc {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+  #pricing .pricing-box .tab-content .pricing-single-box .pricing-body .pricing-list{
+    display: block;
+  }
+
+  #blog .blog-box .blog-single-box .blog-content .ctg-info-title a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #contact .contact-box .contact-title .title {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  #contact .contact-box .contact-desc p {
+    font-size: 14px;
+  }
+  #footer .footer-area .footer-desc {
+    font-size: 14px;
+  }
+  
+}
